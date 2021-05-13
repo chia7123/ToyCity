@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> 
+<html class="no-js"> <!--<![endif]-->
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="description" content="An ecommerce page for the night market">
+	<meta name="author" content="UCCD2223 students">
+  
+	<title>TOY CITY | Order</title>
+  
+	<!-- Mobile Specific Meta-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<!-- Favicon -->
+	<link rel="shortcut icon" type="image/x-icon" href="images/favicon1.jpg" />
+	
+	<!-- Themefisher Icon font -->
+	<link rel="stylesheet" href="plugins/themefisher-font/style.css">
+	<!-- bootstrap.min css -->
+	<link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css">
+	
+	<!-- Revolution Slider -->
+	<link rel="stylesheet" type="text/css" href="plugins/revolution-slider/revolution/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css">
+	<link rel="stylesheet" type="text/css" href="plugins/revolution-slider/revolution/fonts/font-awesome/css/font-awesome.css">
+  
+	<!-- REVOLUTION STYLE SHEETS -->
+	<link rel="stylesheet" type="text/css" href="plugins/revolution-slider/revolution/css/settings.css">
+	<link rel="stylesheet" type="text/css" href="plugins/revolution-slider/revolution/css/layers.css">
+	<link rel="stylesheet" type="text/css" href="plugins/revolution-slider/revolution/css/navigation.css">
+	
+	<!-- Main Stylesheet -->
+	<link rel="stylesheet" href="css/style.css">
+  
+  </head>
+  
+  <body id="body">
+	  <style>
+	table{
+		border-collapse: collapse;
+		text-align: center;
+	}
+	</style>
+  <!-- Start Top Header Bar -->
+  <section class="top-header">
+	  <div class="container">
+		  <div class="row">
+			  <div class="col-md-4 col-xs-12 col-sm-4">
+				  <div class="contact-number">
+					  <i class="tf-ion-ios-telephone"></i>
+					  <span>011-11113456</span>
+				  </div>
+			  </div>
+			  <div class="col-md-4 col-xs-12 col-sm-4">
+				  <!-- Site Logo -->
+				  <div class="logo text-center">
+					  <a href="index.html">
+						  <!-- replace logo here -->
+						  <img  class="media-object" src="images/logo.jpg" height=180 alt="image" />
+						  <svg width="300px" height="29px" viewBox="0 0 155 29" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+							  <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" font-size="40" font-family="AustinBold, Austin" font-weight="bold">
+								  <g id="Group" transform="translate(-108.000000, -297.000000)" fill="#000000">
+									  <text id="ToyCity">
+										  <tspan x="60" y="325">TOY CITY</tspan>
+									  </text>
+								  </g>
+							  </g>
+						  </svg>
+						   
+					  </a>
+				  </div>
+			  </div>
+			  <div class="col-md-4 col-xs-12 col-sm-4">
+			  <!-- Cart -->
+			  <ul class="top-menu text-right list-inline">
+				<li class="dropdown ">
+				  <a href="cart.html" ><i class="tf-ion-android-cart"></i>Cart</a>
+				</li><!-- / Cart -->
+  
+				<!-- Search -->
+				<li class="dropdown search dropdown-slide">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown"><i class="tf-ion-ios-search-strong"></i> Search</a>
+					<ul class="dropdown-menu search-dropdown">
+					  <li><form action="post" onsubmit="search()"><input type="search" id="searchbox" class="form-control" placeholder="Search..."></form></li>
+					</ul>
+				  </li><!-- / Search -->
+	
+				  <!--Search function-->
+	    <script>
+		        function search() 
+		        {
+		            event.preventDefault();
+		            var gotsearch = false;
+		            var item=["bicycle","guitar","ultramen","toy car","children car","cubebox","dinosour","barbie doll","fishing game","pistol","transformer","scooter"]
+		            var str=document.getElementById("searchbox").value.toLowerCase();
+		            for(var i=0; i<12;i++)
+		            {
+		                if(str===item[i]){
+		                    gotsearch=true;
+		                    location.replace("product"+(i+1)+".html");}
+		            }
+		            if(gotsearch==false)
+		                location.replace("404.html");
+		        }     
+		    </script>
+  
+  
+			  </ul><!-- / .nav .navbar-nav .navbar-right -->
+			  </div>
+		  </div>
+	  </div>
+  </section><!-- End Top Header Bar -->
+  
+  
+  <!-- Main Menu Section -->
+  <section class="menu">
+	  <nav class="navbar navigation">
+		  <div class="container">
+			<div class="navbar-header">
+				<h2 class="menu-title">Main Menu</h2>
+			  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			  </button>
+  
+			</div><!-- / .navbar-header -->
+  
+			<!-- Navbar Links -->
+			<div id="navbar" class="navbar-collapse collapse text-center">
+			  <ul class="nav navbar-nav">
+  
+				<!-- Home -->
+				<li class="dropdown ">
+				  <a href="index.html">Home</a>
+				</li><!-- / Home -->
+  
+  
+				<!-- Elements -->
+				<li class="dropdown dropdown-slide">
+				  <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="350" role="button" aria-haspopup="true" aria-expanded="false">Shop <span class="tf-ion-ios-arrow-down"></span></a>
+				  <div class="dropdown-menu">
+					<div class="row">
+  
+					  <!-- Basic -->
+					  <div class="col-lg-6 col-md-6 mb-sm-3">
+						  <ul>
+							  <li class="dropdown-header">Pages</li>
+							  <li role="separator" class="divider"></li>
+							  <li><a href="shop.html">Shop</a></li>
+							  <li><a href="checkout.html">Checkout</a></li>
+							  <li><a href="cart.html">Cart</a></li>
+						  </ul>
+					  </div>
+  
+  
+					</div><!-- / .row -->
+				  </div><!-- / .dropdown-menu -->
+				</li><!-- / Elements -->
+  
+  
+				<!-- Pages -->
+				<li class="dropdown full-width dropdown-slide">
+				  <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="350" role="button" aria-haspopup="true" aria-expanded="false">Pages <span class="tf-ion-ios-arrow-down"></span></a>
+				  <div class="dropdown-menu">
+						<div class="row">
+  
+						  <!-- Introduction -->
+						  <div class="col-sm-3 col-xs-12">
+							  <ul>
+								  <li class="dropdown-header">Introduction</li>
+								  <li role="separator" class="divider"></li>
+								  <li><a href="about.html">About Us</a></li>
+								  <li><a href="faq.html">FAQ</a></li>
+							  </ul>
+						  </div>
+  
+						 <!-- Contact -->
+						 <div class="col-sm-3 col-xs-12">
+		                	<ul>
+								<li class="dropdown-header">Dashboard</li>
+								<li role="separator" class="divider"></li>
+								<li><a href="dashboard.html">User Interface</a></li>
+								<li><a href="order.html">Orders</a></li>
+								<li><a href="profile.htm">Profile Details</a></li>
+		                	</ul>
+		                </div>
+
+		                <!-- Utility -->
+		                <div class="col-sm-3 col-xs-12">
+		                	<ul>
+								<li class="dropdown-header">Utility</li>
+								<li role="separator" class="divider"></li>
+								<li><a href="login.htm">Login Page</a></li>
+								<li><a href="sign-up.htm">Signin Page</a></li>
+		                	</ul>
+		                </div>
+  
+						  <!-- Mega Menu -->
+						  <div class="col-sm-3 col-xs-12">
+							  <a href="shop.html">
+								  <img class="img-responsive" src="images/logo.jpg" alt="menu image" />
+							  </a>
+						  </div>
+						</div><!-- / .row -->
+				  </div><!-- / .dropdown-menu -->
+				</li><!-- / Pages -->
+  
+			  </ul><!-- / .nav .navbar-nav -->
+  
+				</div><!--/.navbar-collapse -->
+		  </div><!-- / .container -->
+	  </nav>
+  </section>
+
+
+<section class="page-header">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="content">
+					<h1 class="page-name">Order</h1>
+					<ol class="breadcrumb">
+						<li><a href="#">Home</a></li>
+						<li class="active">my account</li>
+					</ol>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="user-dashboard page-wrapper">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<ul class="list-inline dashboard-menu text-center">
+					<li><a class="active" href="order.html">Orders</a></li>
+					<li><a href="profile.htm">Profile Details</a></li>
+				</ul>
+				<div class="dashboard-wrapper user-dashboard">
+					<div class="table-responsive">
+						<table class="table" id="MyOrder"></table>
+					</div>
+					<div id="order"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</section>
+
+<!--to check user make order or not , if got list down the details in table-->
+<script>
+	var orderempty=true;
+	 if ("Order" in localStorage)
+	 {
+		 orderempty=false;
+		var OrderArr = JSON.parse(localStorage.getItem("Order"));//retrieve JSON array from local storage
+		for(var i=0;i<OrderArr.length;i++)
+		{
+			var Order=JSON.parse(OrderArr[i]);//change to Javascript object
+			var table = document.getElementById("MyOrder");
+	    	var row = table.insertRow(-1);
+	    	var cell1 = row.insertCell(0);
+	    	var cell2 = row.insertCell(1);
+	    	var cell3 = row.insertCell(2);
+	    	var cell4 = row.insertCell(3);
+			var cell5 = row.insertCell(4);
+			var cell6 = row.insertCell(5);
+
+	    	cell1.innerHTML ="#UCCD00"+i;
+			cell2.innerHTML =Order.date;
+			cell3.innerHTML =Order.quantity;
+			cell4.innerHTML =Order.total;
+			cell5.innerHTML ="<td><span class='label label-success'>Completed</span></td>";
+			cell6.innerHTML =Order.address;
+
+		}
+	 }
+	 else{
+		orderempty=true;
+	 }
+	 if(orderempty==true)
+	 { //if the cart is empty
+	   //message show to user did not make any order
+	   document.getElementById("order").innerHTML = "<h1 style='text-align:center;text-shadow:-4px 4px 6px dimgrey'>You did not make any order.</h1><br>";
+	   //button link shop.html
+	   document.getElementById("order").innerHTML +="<a href='shop.html'><h1 style='color:black;text-align:center;'>Shop Now<img src='images/shop/shopping-cart.png' alt='cart icon' width='100' height='100'></h1></a>";
+	 }
+	else{ //add to first row of the table orderSummary
+	   var row = table.insertRow(0);
+	   var cell1 = row.insertCell(0);
+	   var cell2 = row.insertCell(1);
+	   var cell3 = row.insertCell(2);
+	   var cell4 = row.insertCell(3);
+	   var cell5 = row.insertCell(4);
+	   var cell6 = row.insertCell(5);
+	   
+	   //for the header of the table
+	   cell1.innerHTML = "<b>Order ID</b>";
+	   cell2.innerHTML = "<b>Date</b>";
+	   cell3.innerHTML = "<b>Item Quantity</b>";
+	   cell4.innerHTML = "<b>Total Price</b>";
+	   cell5.innerHTML = "<b>Status</b>";
+	   cell6.innerHTML = "<b>Address</b>";
+ 
+	 }
+
+	 
+</script>
+<footer class="footer section text-center">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<ul class="footer-menu">
+					
+					<li>
+						<a href="tandc.html">TERMS OF SERVICE</a>
+					</li>
+					<li>
+						<a href="privacy.html">PRIVACY POLICY</a>
+					</li>
+				</ul>
+				<p class="copyright-text">Powered by Bootstrap</p>
+			</div>
+		</div>
+	</div>
+</footer>
+    <!-- 
+    Essential Scripts
+    =====================================-->
+    
+    <!-- Main jQuery -->
+    <script src="plugins/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap 3.1 -->
+    <script src="plugins/bootstrap/js/bootstrap.min.js"></script>
+    <!-- Bootstrap Touchpin -->
+    <script src="plugins/bootstrap-touchspin/dist/jquery.bootstrap-touchspin.min.js"></script>
+    <!-- Instagram Feed Js -->
+    <script src="plugins/instafeed-js/instafeed.min.js"></script>
+    <!-- Video Lightbox Plugin -->
+    <script src="plugins/ekko-lightbox/dist/ekko-lightbox.min.js"></script>
+    <!-- Count Down Js -->
+    <script src="plugins/SyoTimer/build/jquery.syotimer.min.js"></script>
+    
+    <!-- Revolution Slider -->
+    <script type="text/javascript" src="plugins/revolution-slider/revolution/js/jquery.themepunch.tools.min.js"></script>
+    <script type="text/javascript" src="plugins/revolution-slider/revolution/js/jquery.themepunch.revolution.min.js"></script>
+    
+    <!-- Revolution Slider -->
+    <script type="text/javascript" src="plugins/revolution-slider/revolution/js/extensions/revolution.extension.actions.min.js"></script>
+    <script type="text/javascript" src="plugins/revolution-slider/revolution/js/extensions/revolution.extension.carousel.min.js"></script>
+    <script type="text/javascript" src="plugins/revolution-slider/revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
+    <script type="text/javascript" src="plugins/revolution-slider/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
+    <script type="text/javascript" src="plugins/revolution-slider/revolution/js/extensions/revolution.extension.migration.min.js"></script>
+    <script type="text/javascript" src="plugins/revolution-slider/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+    <script type="text/javascript" src="plugins/revolution-slider/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
+    <script type="text/javascript" src="plugins/revolution-slider/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+    <script type="text/javascript" src="plugins/revolution-slider/revolution/js/extensions/revolution.extension.video.min.js"></script>
+    <script type="text/javascript" src="plugins/revolution-slider/revolution/js/extensions/revolution.extension.video.min.js"></script>
+    <script type="text/javascript" src="plugins/revolution-slider/assets/warning.js"></script>  
+
+
+
+    <!-- Google Mapl -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCC72vZw-6tGqFyRhhg5CkF2fqfILn2Tsw"></script>
+  <script type="text/javascript" src="plugins/google-map/gmap.js"></script>
+
+    <!-- Main Js File -->
+	<script src="js/script.js"></script>
+	<!-- TODO Register the service worker -->
+	<script>
+		if ('serviceWorker' in navigator) {
+		  window.addEventListener('load', function () {
+			navigator.serviceWorker.register('sw.js')
+			  .then(reg => {
+				console.log('Service worker registered! 😎', reg);
+			  })
+			  .catch(err => {
+				console.log('😥 Service worker registration failed: ', err);
+			  });
+		  });
+		}
+	  </script>
+    
+
+
+  </body>
+  </html>
